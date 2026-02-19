@@ -2,8 +2,8 @@ import requests
 import os
 from datetime import datetime
 
-GITHUB_USERNAME = os.getenv("GITHUB_USERNAME")
-REPO_NAME = os.getenv("REPO_NAME")
+GITHUB_USERNAME = os.getenv("GITHUB_USERNAME", "kimsojeong7")
+REPO_NAME = os.getenv("REPO_NAME", "Resume")
 BRANCH = "main"
 
 API_URL = f"https://api.github.com/repos/{GITHUB_USERNAME}/{REPO_NAME}/contents"
