@@ -1,0 +1,25 @@
+name: Resume Alert System
+
+on:
+  workflow_run:
+    workflows: ["Auto Generate Contents"]
+    types:
+      - completed
+
+jobs:
+  send-alert:
+    if: ${{ github.event.workflow_run.conclusion == 'failure' }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+
+      - name: Run alert script
+        run: python send_alert.py
+        env:
+          ALERT_EMAIL: ${{ secrets.github@gmail.com }}
+          ALERT_PASSWORD: ${{ secrets.sojeong2004 }}
+          ALERT_RECEIVER: ${{ secrets.sjeongkim2004@gmail.com }}                  
