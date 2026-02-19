@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume | Security Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Pretendard', sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 50px auto;
+      background: #1e293b;
+      border-radius: 15px;
+      overflow: hidden;
+      display: flex;
+      box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    }
+
+    /* 왼쪽 프로필 영역 */
+    .sidebar {
+      width: 35%;
+      background: #111827;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #38bdf8;
+      margin-bottom: 20px;
+    }
+
+    .name {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .title {
+      color: #38bdf8;
+      margin-bottom: 30px;
+    }
+
+    .sidebar h3 {
+      margin: 25px 0 10px;
+      font-size: 16px;
+      color: #94a3b8;
+    }
+
+    .sidebar p {
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    /* 오른쪽 내용 영역 */
+    .main {
+      width: 65%;
+      padding: 40px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      border-left: 4px solid #38bdf8;
+      padding-left: 10px;
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+
+    .card {
+      margin-bottom: 15px;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #334155;
+      padding: 6px 12px;
+      border-radius: 20px;
+      margin: 5px 5px 0 0;
+      font-size: 13px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+      color: #64748b;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .sidebar, .main {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- 왼쪽 프로필 -->
+  <div class="sidebar">
+    <img src="profile.jpg" alt="Profile Photo" class="profile-img">
+    <div class="name">김소정</div>
+    <div class="title">Aspiring Security Engineer</div>
+
+    <h3>CONTACT</h3>
+    <p>Email: your.email@example.com</p>
+    <p>GitHub: github.com/yourgithub</p>
+
+    <h3>SKILLS</h3>
+    <div class="skills">
+      <span>Linux</span>
+      <span>Network</span>
+      <span>TCP/IP</span>
+      <span>Firewall</span>
+      <span>Wireshark</span>
+      <span>AWS</span>
+      <span>Docker</span>
+      <span>Kubernetes</span>
+      <span>Python</span>
+      <span>Git</span>
+    </div>
+  </div>
+
+  <!-- 오른쪽 메인 -->
+  <div class="main">
+
+    <div class="section">
+      <h2>About Me</h2>
+      <div class="card">
+        네트워크 및 클라우드 보안에 관심을 가진 예비 보안 엔지니어입니다.
+        가상환경 기반 실습과 프로젝트 경험을 통해 실무 역량을 강화하고 있습니다.
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Projects</h2>
+      <div class="card">
+        🔐 <strong>Network Security Lab</strong><br>
+        방화벽 설정 및 패킷 분석 실습 환경 구축
+      </div>
+      <div class="card">
+        ☁ <strong>Cloud Security Practice</strong><br>
+        AWS IAM 및 보안 그룹 설정 실습
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Education</h2>
+      <div class="card">
+        ○○대학교 컴퓨터공학과 (보안 전공)<br>
+        2023 - Present
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  © 2026 김소정 | Security Portfolio
+</footer>
+
+</body>
+</html>
